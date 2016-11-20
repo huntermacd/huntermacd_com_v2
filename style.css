@@ -66,7 +66,7 @@ a {
 	position: relative;
 }
 
-.cursor {
+#cursor {
 	font-size: 28px;
 	left: 16px;
 	position: absolute;
@@ -80,4 +80,8 @@ h4 {
 
 iframe {
 	height: 336px;
+}
+
+footer {
+	text-align: center;
 }
