@@ -16,7 +16,26 @@ class AppRoot extends React.Component {
   }
 }
 
-class Header extends React.Component {
+const Header = () => {
+  return(
+    <header>
+      <p>=> pwd</p>
+      <p>/users/huntermacd/website</p>
+      <br />
+      <p>=> ls</p>
+      <nav>
+        <ul>
+          <li><Link to='/'>about-me.txt</Link></li>
+          <li><Link to='skills-and-specialties'>skills-and-specialities.txt</Link></li>
+          <li><Link to='work-examples'>work-examples.txt</Link></li>
+        </ul>
+      </nav>
+      <br />
+    </header>
+  );
+}
+
+class Cursor extends React.Component {
   componentDidMount() {
     this.cursor = document.getElementById('cursor');
     this.cursorBlink = setInterval(() => {
@@ -30,22 +49,10 @@ class Header extends React.Component {
 
   render() {
     return(
-      <header>
-        <p>=> pwd</p>
-        <p>/user/huntermacd/website</p>
-        <br />
-        <p>=> ls</p>
-        <nav>
-          <ul>
-            <li><Link to='/'>about-me.txt</Link></li>
-            <li><Link to='skills-and-specialties'>skills-and-specialities.txt</Link></li>
-            <li><Link to='work-examples'>work-examples.txt</Link></li>
-          </ul>
-        </nav>
-        <br />
+      <div>
         <p className="prompt">=> <span id="cursor">{ `\u25ae` }</span></p>
         <br />
-      </header>
+      </div>
     );
   }
 }
@@ -54,6 +61,7 @@ const AboutMe = () => {
   return(
     <div>
       <main>
+        <Cursor />
         <section className='about'>
           <h4>about-me.txt</h4>
           <br />
@@ -74,7 +82,7 @@ const AboutMe = () => {
           </p>
           <br />
           <p>
-            More information about my work history can be found here: <a href="https://www.linkedin.com/in/hunter-macdermut-8162b66b">LinkedIn</a>. In addition to the <a href="#">work-examples.txt</a> section, my public repos can be found here: <a href="https://github.com/huntermacd/">GitHub</a>. And I may be reached by email at <a href="mailto:whosebluesanyway@gmail.com">whosebluesanyway@gmail.com</a>.
+            More information about my work history can be found here: <a href="https://www.linkedin.com/in/hunter-macdermut-8162b66b">LinkedIn</a>. My public repos can be found here: <a href="https://github.com/huntermacd/">GitHub</a>. And I may be reached by email at <a href="mailto:whosebluesanyway@gmail.com">whosebluesanyway@gmail.com</a>.
           </p>
         </section>
       </main>
@@ -85,6 +93,7 @@ const AboutMe = () => {
 const SkillsAndSpecialties = () => {
   return(
     <div>
+      <Cursor />
       <section className='skills'>
         <h4>skills-and-specialties.txt</h4>
         <br />
@@ -97,6 +106,7 @@ const SkillsAndSpecialties = () => {
 const WorkExamples = () => {
   return(
     <div>
+      <Cursor />
       <section className='work'>
         <h4>work-examples.txt</h4>
         <br />
