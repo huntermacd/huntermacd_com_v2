@@ -35,26 +35,13 @@ const Header = () => {
   );
 }
 
-class Cursor extends React.Component {
-  componentDidMount() {
-    this.cursor = document.getElementById('cursor');
-    this.cursorBlink = setInterval(() => {
-      this.cursor.style.visibility === 'visible' ? this.cursor.style.visibility = 'hidden' : this.cursor.style.visibility = 'visible';
-    }, 500);
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.timer);
-  }
-
-  render() {
-    return(
-      <div>
-        <p className="prompt">=> <span id="cursor">{ `\u25ae` }</span></p>
-        <br />
-      </div>
-    );
-  }
+const Cursor = () => {
+  return(
+    <div>
+      <p className="prompt">=> <span id="cursor">{ `\u25ae` }</span></p>
+      <br />
+    </div>
+  );
 }
 
 const AboutMe = () => {

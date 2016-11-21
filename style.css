@@ -75,7 +75,32 @@ header p:nth-child(2) {
 	left: 16px;
 	position: absolute;
 	top: -6px;
-	visibility: visible;
+	-webkit-animation-duration: 750ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: cursor-blink;
+	animation-duration: 750ms;
+	animation-iteration-count: infinite;
+	animation-name: cursor-blink;
+}
+
+@-webkit-keyframes cursor-blink {
+	from {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+@keyframes cursor-blink {
+	from {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
 }
 
 h4 {
