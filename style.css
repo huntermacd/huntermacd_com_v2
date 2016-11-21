@@ -66,15 +66,11 @@ header p:nth-child(2) {
 	color: magenta;
 }
 
-.prompt {
-	position: relative;
-}
-
-#cursor {
+.cursor {
 	font-size: 28px;
-	left: 16px;
-	position: absolute;
-	top: -6px;
+	left: -4px;
+	position: relative;
+	top: 7px;
 	-webkit-animation-duration: 750ms;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-name: cursor-blink;

@@ -26,7 +26,7 @@ const Header = () => {
       <nav>
         <ul>
           <li><Link to='/'>about-me.txt</Link></li>
-          <li><Link to='skills-and-specialties'>skills-and-specialities.txt</Link></li>
+          <li><Link to='skills-and-specialties'>skills-and-specialties.txt</Link></li>
           <li><Link to='work-examples'>work-examples.txt</Link></li>
         </ul>
       </nav>
@@ -35,26 +35,47 @@ const Header = () => {
   );
 }
 
-const Cursor = () => {
-  return(
-    <div>
-      <p className="prompt">=> <span id="cursor">{ `\u25ae` }</span></p>
-      <br />
-    </div>
-  );
+class Cursor extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      section: props.section,
+      text: []
+    }
+  }
+
+  componentDidMount() {
+    let split = this.state.section.split('');
+
+    let timer = setInterval(() => {
+      if (split.length > 0) {
+        this.state.text.push(split.shift());
+        this.setState({ text: this.state.text });
+      } else {
+        clearInterval(timer);
+      }
+    }, 50);
+  }
+
+  render() {
+    return(
+      <div>
+        <p>=> cat <span>{ this.state.text }</span><span className="cursor">{ `\u25ae` }</span></p>
+        <br />
+      </div>
+    );
+  }
 }
 
 const AboutMe = () => {
   return(
     <div>
       <main>
-        <Cursor />
+        <Cursor section='about-me.txt' />
         <section className='about'>
           <h4>about-me.txt</h4>
           <br />
-          <div className='headshot'>
-            <iframe src='headshot.html'></iframe>
-          </div>
+          <iframe src='headshot.html'></iframe>
           <br />
           <p>
             My name is Hunter MacDermut and I'm a front-end web developer currently living in Boulder, CO. I'm a self-taught programmer, having picked up much of what I know doing contract work with <a href="https://www.caktusgroup.com/">Caktus Group</a> and <a href="http://www.coxmediagroup.com/">Cox Media Group</a> since May 2014. I keep on top of new tools and frameworks by regularly taking courses on <a href="https://teamtreehouse.com/huntermacdermut">Treehouse</a> and <a href="https://www.codeschool.com/users/353167">Code School</a>.
@@ -80,7 +101,7 @@ const AboutMe = () => {
 const SkillsAndSpecialties = () => {
   return(
     <div>
-      <Cursor />
+      <Cursor section='skills-and-specialties.txt' />
       <section className='skills'>
         <h4>skills-and-specialties.txt</h4>
         <br />
@@ -93,7 +114,7 @@ const SkillsAndSpecialties = () => {
 const WorkExamples = () => {
   return(
     <div>
-      <Cursor />
+      <Cursor section='work-examples.txt' />
       <section className='work'>
         <h4>work-examples.txt</h4>
         <br />
