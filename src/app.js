@@ -1,6 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, hashHistory } from 'react-router';
+import { Router, Route, Link, hashHistory, IndexRoute } from 'react-router';
+
+class AppRoot extends React.Component {
+  render() {
+    let { header, main, footer } = this.props;
+
+    return(
+      <div>
+        { header }
+        { main }
+        { footer }
+      </div>
+    );
+  }
+}
 
 class Header extends React.Component {
   componentDidMount() {
@@ -39,7 +53,6 @@ class Header extends React.Component {
 const AboutMe = () => {
   return(
     <div>
-      <Header />
       <main>
         <section className='about'>
           <h4>about-me.txt</h4>
@@ -64,7 +77,6 @@ const AboutMe = () => {
             More information about my work history can be found here: <a href="https://www.linkedin.com/in/hunter-macdermut-8162b66b">LinkedIn</a>. In addition to the <a href="#">work-examples.txt</a> section, my public repos can be found here: <a href="https://github.com/huntermacd/">GitHub</a>. And I may be reached by email at <a href="mailto:whosebluesanyway@gmail.com">whosebluesanyway@gmail.com</a>.
           </p>
         </section>
-        <Footer />
       </main>
     </div>
   );
@@ -73,13 +85,11 @@ const AboutMe = () => {
 const SkillsAndSpecialties = () => {
   return(
     <div>
-      <Header />
       <section className='skills'>
         <h4>skills-and-specialties.txt</h4>
         <br />
         <p>Skills and specialties page.</p>
       </section>
-      <Footer />
     </div>
   );
 }
@@ -87,13 +97,11 @@ const SkillsAndSpecialties = () => {
 const WorkExamples = () => {
   return(
     <div>
-      <Header />
       <section className='work'>
         <h4>work-examples.txt</h4>
         <br />
         <p>Work examples page.</p>
       </section>
-      <Footer />
     </div>
   );
 }
@@ -110,9 +118,11 @@ const Footer = () => {
 
 ReactDOM.render((
     <Router history={ hashHistory }>
-      <Route path='/' component={ AboutMe } />
-      <Route path='/skills-and-specialties' component={ SkillsAndSpecialties } />
-      <Route path='/work-examples' component={ WorkExamples } />
+      <Route path='/' component={ AppRoot }>
+        <IndexRoute components={{ header: Header, main: AboutMe, footer: Footer }} />
+        <Route path='skills-and-specialties' components={{ header: Header, main: SkillsAndSpecialties, footer: Footer }} />
+        <Route path='work-examples' components={{ header: Header, main: WorkExamples, footer: Footer }} />
+      </Route>
     </Router>
   ), document.getElementById('root')
 );
