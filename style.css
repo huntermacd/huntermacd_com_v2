@@ -109,6 +109,23 @@ iframe {
 	margin: 0 auto;
 }
 
+.column h5 {
+	font-style: italic;
+}
+
+.languages h5 {
+	color: red;
+}
+
+.etc h5 {
+	color: lime;
+}
+
+.sub-column {
+	display: inline-table;
+	width: 50%;
+}
+
 footer {
 	text-align: center;
 }
