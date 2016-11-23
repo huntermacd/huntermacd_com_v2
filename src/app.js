@@ -243,7 +243,30 @@ class WorkExamples extends React.Component {
           <section className='work'>
             <h4>Work Examples</h4>
             <br />
-            <p>Work examples page.</p>
+            <article>
+              <h5>ex. 01: elm-memory</h5>
+              <br />
+              <img src='imgs/elm-memory.png' alt='Screenshot of Elm memory matching game logo.' />
+              <br />
+              <a href='https://huntermacd.github.io/elm-memory/'>huntermacd.github.io/elm-memory/</a>
+              <br />
+              <p className='technologies'>HTML, CSS, Elm</p>
+              <br />
+              <p>{`This is my first complete Elm project. I appreciate Elm's notion of global app state and reactive UI. Dabbling with Elm has improved my understanding of the React/Redux libraries and has been an enjoyable introduction to functional programming.`}</p>
+              <br />
+            </article>
+            <article>
+              <h5>ex. 02: rag_and_bone</h5>
+              <br />
+              <img src='' alt='' />
+              <br />
+              <a href='#'></a>
+              <br />
+              <p className='technologies'></p>
+              <br />
+              <p></p>
+              <br />
+            </article>
           </section>
         }
       </div>

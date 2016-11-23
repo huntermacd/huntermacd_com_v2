@@ -126,6 +126,18 @@ iframe {
 	width: 50%;
 }
 
+img {
+	margin: 20px auto;
+}
+
+.work h5 {
+	color: lime;
+}
+
+.technologies {
+	color: red;
+}
+
 footer {
 	text-align: center;
 }
