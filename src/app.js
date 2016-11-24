@@ -244,7 +244,33 @@ class WorkExamples extends React.Component {
             <h4>Work Examples</h4>
             <br />
             <article>
-              <h5>ex. 01: elm-memory</h5>
+              <h5>ex. 01: duckling</h5>
+              <br />
+              <img src='imgs/duckling.png' alt={`Logo for Caktus Group's social gathering app, Duckling.`} />
+              <br />
+              <a href='https://duckling.us/'>duckling.us/</a>
+              <br />
+              <p className='technologies'>CSS, JavaScript, Python, Django, Google Maps API</p>
+              <br />
+              <p>{`While interning for Caktus Group, I was in charge of making improvements to their social gathering app called Duckling, which they've used at numerous conferences to show off their work. My contributions include integrating Google Maps into the Django admin and creating an embeddable widget for convention websites to advertise the app.`}</p>
+              <br />
+            </article>
+            <article>
+              <h5>ex. 02: Cox Media Group</h5>
+              <br />
+              <img src='imgs/cox-media-group.png' alt='Cox Media Group logo.' />
+              <br />
+              <a href='http://membercenter.ajc.com/'>membercenter.ajc.com/</a>
+              <br />
+              <p className='technologies'>HTML, CSS, JavaScript, Python, Django, React, Redux, AWS</p>
+              <br />
+              <p>{`My contract work for Cox Media Group included HTML, CSS, Python, and Django for almost 2 years, working on their Medley content management system. This single, enormous Django app served numerous newspapers and television and radio stations across the country. The majority of my work went into implementing the redesign of their Member Center, which is where users can manage their personal information, newspaper subscriptions, and text notifications.`}</p>
+              <br />
+              <p>{`In early 2016 the Medley project was replaced by a new Java-based system. I was one of three developers chosen to head up the Member Center as-a-service project. This JavaScript/React application is linked to from all of CMG's properties and is customized per property. This project launched in September 2016 and leverages the latest JavaScript version (ECMAScript 6) and libraries (React, Redux).`}</p>
+              <br />
+            </article>
+            <article>
+              <h5>ex. 03: elm-memory</h5>
               <br />
               <img src='imgs/elm-memory.png' alt='Screenshot of Elm memory matching game logo.' />
               <br />
@@ -256,17 +282,43 @@ class WorkExamples extends React.Component {
               <br />
             </article>
             <article>
-              <h5>ex. 02: rag_and_bone</h5>
+              <h5>ex. 04: rag_and_bone</h5>
               <br />
-              <img src='' alt='' />
+              <img src='imgs/rag_and_bone.png' alt='Screenshot of sleeping dude from white noise app.' />
               <br />
-              <a href='#'></a>
+              <a href='https://huntermacd.github.io/rag_and_bone/'>huntermacd.github.io/rag_and_bone/</a>
               <br />
-              <p className='technologies'></p>
+              <p className='technologies'>HTML, CSS, JavaScript, Web Audio API</p>
               <br />
-              <p></p>
+              <p>{`You never know when you'll need some white noise to block out the unwanted sounds around you, so I created this simple white noise application. Click the little dude and he'll go to sleep. Using the Web Audio API, this app generates genuine white noise while a sleeping animation plays. This was a fun introduction to CSS animations for me.`}</p>
               <br />
             </article>
+            <article>
+              <h5>ex. 05: dont_touch_no_no</h5>
+              <br />
+              <img src='imgs/dont_touch_no_no.png' alt='Screenshot of bullet hell-style game built with Phaser JavaScript game framework.' />
+              <br />
+              <a href='http://huntermacd.github.io/dont_touch_no_no/'>huntermacd.github.io/dont_touch_no_no/</a>
+              <br />
+              <p className='technologies'>JavaScript, Phaser</p>
+              <br />
+              <p>{`This is a small HTML5 game I built using the Phaser JavaScript game framework. The game is designed to scale to whatever size screen on which you'd like to play it. It's Helix meets Super Hexagon meets bullet hell. Spin around to reduce the number of baddies coming at you and survive as long as you can!`}</p>
+              <br />
+            </article>
+            <article>
+              <h5>ex. 06: synth</h5>
+              <br />
+              <img src='imgs/synth.png' alt='Screenshot of mobile synthesizer web app.' />
+              <br />
+              <a href='http://huntermacd.github.io/synth/'>huntermacd.github.io/synth/</a>
+              <br />
+              <p className='technologies'>HTML, CSS, JavaScript, Web Audio API</p>
+              <br />
+              <p>{`One of the more intriguing promises of the mobile web for me is the possibility of carrying a musical instrument around with you wherever you go. This synthesizer was designed for mobile devices and uses the Web Audio API, with your input via a waveform selector, a filter, an ADSR, and an LFO, to synthesize sounds on the go. Turn up the volume and drag your finger across the boxes at the bottom to make some music!`}</p>
+              <br />
+            </article>
+            <br/>
+            <p>See more examples of my work on <a href="https://github.com/huntermacd/">GitHub</a>.</p>
           </section>
         }
       </div>
