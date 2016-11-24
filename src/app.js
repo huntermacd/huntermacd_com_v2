@@ -107,7 +107,7 @@ class AboutMe extends React.Component {
             <section className='about'>
               <h4>About Me</h4>
               <br />
-              <iframe src='headshot.html'></iframe>
+              <img src='imgs/huntermacd.png' alt='A portrait of the developer as a young man.' />
               <br />
               <p>
                 My name is Hunter MacDermut and I'm a front-end web developer currently living in Boulder, CO. I'm a self-taught programmer, having picked up much of what I know doing contract work with <a href="https://www.caktusgroup.com/">Caktus Group</a> and <a href="http://www.coxmediagroup.com/">Cox Media Group</a> since May 2014. I keep on top of new tools and frameworks by regularly taking courses on <a href="https://teamtreehouse.com/huntermacdermut">Treehouse</a> and <a href="https://www.codeschool.com/users/353167">Code School</a>.
