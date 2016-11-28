@@ -58,6 +58,11 @@ body {
 	margin: 10px;
 }
 
+#root {
+	margin: 0 auto;
+	max-width: 768px;
+}
+
 a {
 	color: cyan;
 }
@@ -103,12 +108,6 @@ h4 {
 	color: yellow;
 }
 
-iframe {
-	display: block;
-	height: 336px;
-	margin: 0 auto;
-}
-
 .column h5 {
 	font-style: italic;
 }
@@ -127,6 +126,7 @@ iframe {
 }
 
 img {
+	display: block;
 	margin: 20px auto;
 }
 

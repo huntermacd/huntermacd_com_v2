@@ -104,7 +104,7 @@ class AboutMe extends React.Component {
         <main>
           <Cursor section='about-me.txt' />
           { this.props.shouldRender &&
-            <section className='about'>
+            <section>
               <h4>About Me</h4>
               <br />
               <img src='imgs/huntermacd.png' alt='A portrait of the developer as a young man.' />
@@ -148,7 +148,7 @@ class SkillsAndSpecialties extends React.Component {
       <div>
         <Cursor section='skills-and-specialties.txt' />
         { this.props.shouldRender &&
-          <section className='skills'>
+          <section>
             <h4>Skills and Specialties</h4>
             <br />
             <p>I specialize in front-end web technologies, with a focus on turning design comps into functional web pages. I have experience working with the following:</p>
