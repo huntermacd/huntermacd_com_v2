@@ -6,7 +6,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h2, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -69,6 +69,17 @@ a {
 
 header p:nth-child(2) {
 	color: magenta;
+	margin: 5px 0;
+}
+
+header li {
+	margin: 5px 0;
+}
+
+hr {
+	border: none;
+	border-top: 2px dashed magenta;
+	margin: 20px 0;
 }
 
 .cursor {
@@ -104,19 +115,19 @@ header p:nth-child(2) {
 	}
 }
 
-h4 {
+h1 {
 	color: yellow;
 }
 
-.column h5 {
+.column h2 {
 	font-style: italic;
 }
 
-.languages h5 {
+.languages h2 {
 	color: red;
 }
 
-.etc h5 {
+.etc h2 {
 	color: lime;
 }
 
@@ -130,7 +141,7 @@ img {
 	margin: 20px auto;
 }
 
-.work h5 {
+.work h2 {
 	color: lime;
 }
 

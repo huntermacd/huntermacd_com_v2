@@ -46,9 +46,9 @@ const Header = () => {
       <p>=> ls</p>
       <nav>
         <ul>
-          <li><Link to='/'>about-me.txt</Link></li>
-          <li><Link to='skills-and-specialties'>skills-and-specialties.txt</Link></li>
-          <li><Link to='work-examples'>work-examples.txt</Link></li>
+          <li><Link to='/'>about-me.html</Link></li>
+          <li><Link to='skills-and-specialties'>skills-and-specialties.html</Link></li>
+          <li><Link to='work-examples'>work-examples.html</Link></li>
         </ul>
       </nav>
       <br />
@@ -102,10 +102,10 @@ class AboutMe extends React.Component {
     return(
       <div>
         <main>
-          <Cursor section='about-me.txt' />
+          <Cursor section='about-me.html' />
           { this.props.shouldRender &&
             <section>
-              <h4>About Me</h4>
+              <h1>About Me</h1>
               <br />
               <img src='imgs/huntermacd.png' alt='A portrait of the developer as a young man.' />
               <br />
@@ -146,16 +146,16 @@ class SkillsAndSpecialties extends React.Component {
   render() {
     return(
       <div>
-        <Cursor section='skills-and-specialties.txt' />
+        <Cursor section='skills-and-specialties.html' />
         { this.props.shouldRender &&
           <section>
-            <h4>Skills and Specialties</h4>
+            <h1>Skills and Specialties</h1>
             <br />
             <p>I specialize in front-end web technologies, with a focus on turning design comps into functional web pages. I have experience working with the following:</p>
             <br />
             <div>
               <div className='column languages'>
-                <h5>Languages</h5>
+                <h2>Languages</h2>
                 <br />
                 <ul>
                   <li>HTML5</li>
@@ -167,7 +167,7 @@ class SkillsAndSpecialties extends React.Component {
               </div>
               <br />
               <div className='column etc'>
-                <h5>Libraries, Frameworks, Build Tools, Version Control, APIs, etc.</h5>
+                <h2>Libraries, Frameworks, Build Tools, Version Control, APIs, etc.</h2>
                 <br />
                 <div className='sub-column'>
                   <ul>
@@ -238,13 +238,13 @@ class WorkExamples extends React.Component {
   render() {
     return(
       <div>
-        <Cursor section='work-examples.txt' />
+        <Cursor section='work-examples.html' />
         { this.props.shouldRender &&
           <section className='work'>
-            <h4>Work Examples</h4>
+            <h1>Work Examples</h1>
             <br />
             <article>
-              <h5>ex. 01: duckling</h5>
+              <h2>ex. 01: duckling</h2>
               <br />
               <img src='imgs/duckling.png' alt={`Logo for Caktus Group's social gathering app, Duckling.`} />
               <br />
@@ -253,10 +253,10 @@ class WorkExamples extends React.Component {
               <p className='technologies'>CSS, JavaScript, Python, Django, Google Maps API</p>
               <br />
               <p>{`While interning for Caktus Group, I was in charge of making improvements to their social gathering app called Duckling, which they've used at numerous conferences to show off their work. My contributions include integrating Google Maps into the Django admin and creating an embeddable widget for convention websites to advertise the app.`}</p>
-              <br />
             </article>
+            <hr />
             <article>
-              <h5>ex. 02: Cox Media Group</h5>
+              <h2>ex. 02: Cox Media Group</h2>
               <br />
               <img src='imgs/cox-media-group.png' alt='Cox Media Group logo.' />
               <br />
@@ -267,10 +267,10 @@ class WorkExamples extends React.Component {
               <p>{`My contract work for Cox Media Group included HTML, CSS, Python, and Django for almost 2 years, working on their Medley content management system. This single, enormous Django app served numerous newspapers and television and radio stations across the country. The majority of my work went into implementing the redesign of their Member Center, which is where users can manage their personal information, newspaper subscriptions, and text notifications.`}</p>
               <br />
               <p>{`In early 2016 the Medley project was replaced by a new Java-based system. I was one of three developers chosen to head up the Member Center as-a-service project. This JavaScript/React application is linked to from all of CMG's properties and is customized per property. This project launched in September 2016 and leverages the latest JavaScript version (ECMAScript 6) and libraries (React, Redux).`}</p>
-              <br />
             </article>
+            <hr />
             <article>
-              <h5>ex. 03: elm-memory</h5>
+              <h2>ex. 03: elm-memory</h2>
               <br />
               <img src='imgs/elm-memory.png' alt='Screenshot of Elm memory matching game logo.' />
               <br />
@@ -279,10 +279,10 @@ class WorkExamples extends React.Component {
               <p className='technologies'>HTML, CSS, Elm</p>
               <br />
               <p>{`This is my first complete Elm project. I appreciate Elm's notion of global app state and reactive UI. Dabbling with Elm has improved my understanding of the React/Redux libraries and has been an enjoyable introduction to functional programming.`}</p>
-              <br />
             </article>
+            <hr />
             <article>
-              <h5>ex. 04: rag_and_bone</h5>
+              <h2>ex. 04: rag_and_bone</h2>
               <br />
               <img src='imgs/rag_and_bone.png' alt='Screenshot of sleeping dude from white noise app.' />
               <br />
@@ -291,10 +291,10 @@ class WorkExamples extends React.Component {
               <p className='technologies'>HTML, CSS, JavaScript, Web Audio API</p>
               <br />
               <p>{`You never know when you'll need some white noise to block out the unwanted sounds around you, so I created this simple white noise application. Click the little dude and he'll go to sleep. Using the Web Audio API, this app generates genuine white noise while a sleeping animation plays. This was a fun introduction to CSS animations for me.`}</p>
-              <br />
             </article>
+            <hr />
             <article>
-              <h5>ex. 05: dont_touch_no_no</h5>
+              <h2>ex. 05: dont_touch_no_no</h2>
               <br />
               <img src='imgs/dont_touch_no_no.png' alt='Screenshot of bullet hell-style game built with Phaser JavaScript game framework.' />
               <br />
@@ -303,10 +303,10 @@ class WorkExamples extends React.Component {
               <p className='technologies'>JavaScript, Phaser</p>
               <br />
               <p>{`This is a small HTML5 game I built using the Phaser JavaScript game framework. The game is designed to scale to whatever size screen on which you'd like to play it. It's Helix meets Super Hexagon meets bullet hell. Spin around to reduce the number of baddies coming at you and survive as long as you can!`}</p>
-              <br />
             </article>
+            <hr />
             <article>
-              <h5>ex. 06: synth</h5>
+              <h2>ex. 06: synth</h2>
               <br />
               <img src='imgs/synth.png' alt='Screenshot of mobile synthesizer web app.' />
               <br />
@@ -315,7 +315,6 @@ class WorkExamples extends React.Component {
               <p className='technologies'>HTML, CSS, JavaScript, Web Audio API</p>
               <br />
               <p>{`One of the more intriguing promises of the mobile web for me is the possibility of carrying a musical instrument around with you wherever you go. This synthesizer was designed for mobile devices and uses the Web Audio API, with your input via a waveform selector, a filter, an ADSR, and an LFO, to synthesize sounds on the go. Turn up the volume and drag your finger across the boxes at the bottom to make some music!`}</p>
-              <br />
             </article>
             <br/>
             <p>See more examples of my work on <a href="https://github.com/huntermacd/">GitHub</a>.</p>
