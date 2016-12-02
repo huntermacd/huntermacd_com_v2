@@ -110,11 +110,11 @@ class AboutMe extends React.Component {
               <img src='imgs/huntermacd.png' alt='A portrait of the developer as a young man.' />
               <br />
               <p>
-                My name is Hunter MacDermut and I'm a front-end web developer currently living in Boulder, CO. I'm a self-taught programmer, having picked up much of what I know doing contract work with <a href="https://www.caktusgroup.com/">Caktus Group</a> and <a href="http://www.coxmediagroup.com/">Cox Media Group</a> since May 2014. I keep on top of new tools and frameworks by regularly taking courses on <a href="https://teamtreehouse.com/huntermacdermut">Treehouse</a> and <a href="https://www.codeschool.com/users/353167">Code School</a>.
+                My name is Hunter MacDermut and I'm a front-end web developer in Boulder, CO. I'm a self-taught programmer, having picked up much of what I know doing contract work with <a href="https://www.caktusgroup.com/">Caktus Group</a> and <a href="http://www.coxmediagroup.com/">Cox Media Group</a> since May 2014. I keep on top of new tools and frameworks by regularly taking courses on <a href="https://teamtreehouse.com/huntermacdermut">Treehouse</a> and <a href="https://www.codeschool.com/users/353167">Code School</a>.
               </p>
               <br />
               <p>
-                Prior to getting into web development, I taught guitar lessons for seven and a half years. I enjoy learning new things and find that teaching is the best way to do that.
+                Prior to getting into web development, I taught guitar lessons for 7 and a half years. I enjoy learning new things and find that teaching is the best way to do that.
               </p>
               <br />
               <p>
@@ -252,7 +252,7 @@ class WorkExamples extends React.Component {
               <br />
               <p className='technologies'>CSS, JavaScript, Python, Django, Google Maps API</p>
               <br />
-              <p>{`While interning for Caktus Group, I was in charge of making improvements to their social gathering app called Duckling, which they've used at numerous conferences to show off their work. My contributions include integrating Google Maps into the Django admin and creating an embeddable widget for convention websites to advertise the app.`}</p>
+              <p>{`While interning for Caktus Group, I was tasked with making improvements to their social gathering app called Duckling, which they've used at numerous conferences to showcase their work. My contributions include integrating Google Maps into the Django admin and creating an embeddable widget for convention websites to advertise the app.`}</p>
             </article>
             <hr />
             <article>
@@ -264,7 +264,7 @@ class WorkExamples extends React.Component {
               <br />
               <p className='technologies'>HTML, CSS, JavaScript, Python, Django, React, Redux, AWS</p>
               <br />
-              <p>{`My contract work for Cox Media Group included HTML, CSS, Python, and Django for almost 2 years, working on their Medley content management system. This single, enormous Django app served numerous newspapers and television and radio stations across the country. The majority of my work went into implementing the redesign of their Member Center, which is where users can manage their personal information, newspaper subscriptions, and text notifications.`}</p>
+              <p>{`My contract work for Cox Media Group included HTML, CSS, Python, and Django for almost 2 years, working on their Medley content management system. This single, enormous Django app served numerous newspapers, television and radio stations across the country. The majority of my work went into implementing the redesign of their Member Center, which is where users can manage their personal information, newspaper subscriptions, and text notifications.`}</p>
               <br />
               <p>{`In early 2016 the Medley project was replaced by a new Java-based system. I was one of three developers chosen to head up the Member Center as-a-service project. This JavaScript/React application is linked to from all of CMG's properties and is customized per property. This project launched in September 2016 and leverages the latest JavaScript version (ECMAScript 6) and libraries (React, Redux).`}</p>
             </article>
@@ -314,7 +314,7 @@ class WorkExamples extends React.Component {
               <br />
               <p className='technologies'>HTML, CSS, JavaScript, Web Audio API</p>
               <br />
-              <p>{`One of the more intriguing promises of the mobile web for me is the possibility of carrying a musical instrument around with you wherever you go. This synthesizer was designed for mobile devices and uses the Web Audio API, with your input via a waveform selector, a filter, an ADSR, and an LFO, to synthesize sounds on the go. Turn up the volume and drag your finger across the boxes at the bottom to make some music!`}</p>
+              <p>{`An intriguing promise of the mobile web for me is the possibility of carrying a musical instrument around with you wherever you go. This synthesizer was designed for mobile devices and uses the Web Audio API, with your input via a waveform selector, a filter, an ADSR, and an LFO, to synthesize sounds on the go. Turn up the volume and drag your finger across the boxes at the bottom to make some music!`}</p>
             </article>
             <br/>
             <p>See more examples of my work on <a href="https://github.com/huntermacd/">GitHub</a>.</p>
