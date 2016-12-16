@@ -244,33 +244,29 @@ class WorkExamples extends React.Component {
             <h1>Work Examples</h1>
             <br />
             <article>
-              <h2>ex. 01: duckling</h2>
+              <h2>ex. 01: huntermacd_com</h2>
               <br />
-              <img src='imgs/duckling.png' alt={`Logo for Caktus Group's social gathering app, Duckling.`} />
+              <img src='imgs/huntermacd_com.png' alt={`"HM" logo for Hunter MacDermut's blog.`} />
               <br />
-              <a href='https://duckling.us/'>duckling.us/</a>
+              <p>(version 1)</p>
+              <a href='https://github.com/huntermacd/huntermacd_com'>github.com/huntermacd/huntermacd_com</a>
               <br />
-              <p className='technologies'>CSS, JavaScript, Python, Django, Google Maps API</p>
+              <p className='technologies'>HTML, CSS, JavaScript, Express, MongoDB</p>
               <br />
-              <p>{`While interning for Caktus Group, I was tasked with making improvements to their social gathering app called Duckling, which they've used at numerous conferences to showcase their work. My contributions include integrating Google Maps into the Django admin and creating an embeddable widget for convention websites to advertise the app.`}</p>
+              <p>(version 2)</p>
+              <a href='https://github.com/huntermacd/huntermacd_com_v2'>github.com/huntermacd/huntermacd_com_v2</a>
+              <br />
+              <p className='technologies'>HTML, CSS, JavaScript, React, Redux, Gulp, Babel</p>
+              <br />
+              <p>{`My personal website and blog was my first experience building a full-stack JavaScript application. I used the (now-defunct) Swig templating engine for the front-end, Node/Express for the server-side code, and MongoDB as a data-store. I never quite developed as a blogger, however, and have since replaced this site with a new version.`}</p>
+              <br />
+              <p>{`Version 2 of my personal website (which you're looking at right now) is a React/Redux-powered application built using ECMAScript 6, Babel, Gulp, and Yarn. The design is meant to replicate working on the command line. Clicking a link at the top will fire-off some JavaScript to simulate typing in a filename and hitting the return key.`}</p>
+              <br />
+              <p>{`This latest version is representative of the work I did on Cox Media Group's Member Center project from April to November of 2016.`}</p>
             </article>
             <hr />
             <article>
-              <h2>ex. 02: Cox Media Group</h2>
-              <br />
-              <img src='imgs/cox-media-group.png' alt='Cox Media Group logo.' />
-              <br />
-              <a href='http://membercenter.ajc.com/'>membercenter.ajc.com/</a>
-              <br />
-              <p className='technologies'>HTML, CSS, JavaScript, Python, Django, React, Redux, AWS</p>
-              <br />
-              <p>{`My contract work for Cox Media Group included HTML, CSS, Python, and Django for almost 2 years, working on their Medley content management system. This single, enormous Django app served numerous newspapers, television and radio stations across the country. The majority of my work went into implementing the redesign of their Member Center, which is where users can manage their personal information, newspaper subscriptions, and text notifications.`}</p>
-              <br />
-              <p>{`In early 2016 the Medley project was replaced by a new Java-based system. I was one of three developers chosen to head up the Member Center as-a-service project. This JavaScript/React application is linked to from all of CMG's properties and is customized per property. This project launched in September 2016 and leverages the latest JavaScript version (ECMAScript 6) and libraries (React, Redux).`}</p>
-            </article>
-            <hr />
-            <article>
-              <h2>ex. 03: elm-memory</h2>
+              <h2>ex. 02: elm-memory</h2>
               <br />
               <img src='imgs/elm-memory.png' alt='Screenshot of Elm memory matching game logo.' />
               <br />
@@ -279,10 +275,12 @@ class WorkExamples extends React.Component {
               <p className='technologies'>HTML, CSS, Elm</p>
               <br />
               <p>{`This is my first complete Elm project. I appreciate Elm's notion of global app state and reactive UI. Dabbling with Elm has improved my understanding of the React/Redux libraries and has been an enjoyable introduction to functional programming.`}</p>
+              <br />
+              <p>{`I completed a salary transparency calculator for Caktus Group in December 2016; the first Elm project in Caktus' history.`}</p>
             </article>
             <hr />
             <article>
-              <h2>ex. 04: rag_and_bone</h2>
+              <h2>ex. 03: rag_and_bone</h2>
               <br />
               <img src='imgs/rag_and_bone.png' alt='Screenshot of sleeping dude from white noise app.' />
               <br />
@@ -294,7 +292,7 @@ class WorkExamples extends React.Component {
             </article>
             <hr />
             <article>
-              <h2>ex. 05: dont_touch_no_no</h2>
+              <h2>ex. 04: dont_touch_no_no</h2>
               <br />
               <img src='imgs/dont_touch_no_no.png' alt='Screenshot of bullet hell-style game built with Phaser JavaScript game framework.' />
               <br />
@@ -306,7 +304,7 @@ class WorkExamples extends React.Component {
             </article>
             <hr />
             <article>
-              <h2>ex. 06: synth</h2>
+              <h2>ex. 05: synth</h2>
               <br />
               <img src='imgs/synth.png' alt='Screenshot of mobile synthesizer web app.' />
               <br />
@@ -315,6 +313,18 @@ class WorkExamples extends React.Component {
               <p className='technologies'>HTML, CSS, JavaScript, Web Audio API</p>
               <br />
               <p>{`An intriguing promise of the mobile web for me is the possibility of carrying a musical instrument around with you wherever you go. This synthesizer was designed for mobile devices and uses the Web Audio API, with your input via a waveform selector, a filter, an ADSR, and an LFO, to synthesize sounds on the go. Turn up the volume and drag your finger across the boxes at the bottom to make some music!`}</p>
+            </article>
+            <hr />
+            <article>
+              <h2>ex. 06: North Carolina Pipper Peeper</h2>
+              <br />
+              <img src='imgs/ncpipperpeeper.jpg' alt='Picture of a rose-breasted grosbeak.' />
+              <br />
+              <a href='http://ncpipperpeeper.herokuapp.com/'>ncpipperpeeper.herokuapp.com/</a>
+              <br />
+              <p className='technologies'>HTML, CSS, Python, Django, Heroku</p>
+              <br />
+              <p>{`During my internship at Caktus Group and throughout the first two years with Cox Media Group I worked on Python/Django apps. The North Carolina Pipper Peeper is a bird-watching app I built in Django as a showcase of what I learned during my internship. This was my first experience building and deploying a Django app from scratch.`}</p>
             </article>
             <br/>
             <p>See more examples of my work on <a href="https://github.com/huntermacd/">GitHub</a>.</p>
