@@ -18,7 +18,77 @@ class WorkExamples extends React.Component {
         <Cursor section='work-examples.html' />
         { this.props.shouldRender &&
           <section className='work'>
-            <h1>Work Examples</h1>
+            <h1>Client Work:</h1>
+            <br />
+            <article>
+              <h2>ex. 01: Member Center, Cox Media Group</h2>
+              <br />
+              <img src='../imgs/mc/mc_logo.png' alt={`Cox Media Group logo.`} />
+              <br />
+              <p className='technologies'>HTML, CSS, Sass, JavaScript, React, Redux, Express, Gulp, Babel</p>
+              <br />
+              <p>{`I worked for Cox Media Group from September 2014 to November 2016, principally on their Member Center application. This app began as a section of their various newspaper, television, and radio homepages where users could manage their profile info, newsletter subscriptions, and SMS alerts. In April 2016, as their Python/Django-based CMS was being replaced, I was 1 of 3 developers chosen to spearhead the Member Center-as-a-service project, which would recreate Member Center as a standalone app to which any Cox property could link their users.`}</p>
+              <br />
+              <img src='../imgs/mc/mc_loginmodal.png' alt={`Member Center login modal.`} />
+              <br />
+              <p>{`My main contribution was working with the design team to match their comps. We used Sass on this project and kept the .scss file right alongside the matching component so we always knew to what component the styles would be applied.`}</p>
+              <br />
+              <img src='../imgs/mc/mc_youraccount_mobile.png' alt={`Member Center account manage page on the small screen.`} />
+              <br />
+              <p>{`This application is fully responsive and leverages React's strengths in building single-page apps. It was challenging meeting business desires to offer different experiences on larger screens than on smaller screens. For example, the accordion nav shown above is replaced with a hamburger drop-down menu on wider screens.`}</p>
+              <br />
+              <img src='../imgs/mc/mc_formvalidation.png' alt={`Member Center mobile number edit form with validation.`} />
+              <br />
+              <p>{`I was in charge of wiring-up form validation on the various user info inputs across the app. This involved working with third-party user-management service Janrain, and in the case of the mobile phone input, also with mGage. As the user types we're checking first for proper length and formatting, then we ping the mGage API to determine if the number is a valid, connected one before allowing the user to save.`}</p>
+              <br />
+              <img src='../imgs/mc/mc_highschoolsports.png' alt={`Member Center high school sports search widget.`} />
+              <br />
+              <p>{`Another task of mine that involved working with JavaScript was getting the high school sports search widget in place. We decided to use a pre-written predictive search React component. I rewrote this component in ECMAScript 6, made modifications to limit the number of results shown, highlight where in each result the user's query was found, and styled the whole thing to match design comps and UX specifications.`}</p>
+              <br />
+              <p>{`Member Center launched successfully in September 2016.`}</p>
+            </article>
+            <hr />
+            <article>
+              <h2>ex. 02: Salary Calculator, Caktus Group</h2>
+              <br />
+              <img src='../imgs/salary-calculator/caktus_logo.png' alt={`Caktus Group logo.`} />
+              <br />
+              <p className='technologies'>Elm, CSS</p>
+              <br />
+              <p>{`Following my stint with Cox Media Group, I was asked to create a salary calculator app for Caktus Group. This app was front-end-only and needed to do some number crunching, so I chose to build it in Elm. This is a functional programming language that compiles to JavaScript and has numerous niceties, such as static typing, immutable data, and great interop with JavaScript.`}</p>
+              <br />
+              <img src='../imgs/salary-calculator/caktus_salarycalculator_desktop.png' alt={`Wide view of the Caktus salary calculator.`} />
+              <br />
+              <p>{`Elm inspired the creation of Redux and so offers a single data store which allows for the page to update automatically based on changes. This app is a series of drop-downs of various values that updates what will be calculated as they are selected. The user updates the model by selecting a menu option and Elm's built-in update function handles the rest.`}</p>
+              <br />
+              <img src='../imgs/salary-calculator/caktus_salarycalculator_mobile.png' alt={`Mobile view of the Caktus salary calculator.`} />
+              <br />
+              <p>{`This app is entirely responsive and was designed to match the Caktus Group website. It can stand alone or easily be dropped into one of their Django templates if desired.`}</p>
+              <br />
+              <p>{`I completed this application is one week and it marks the first Caktus project written in Elm.`}</p>
+            </article>
+            <hr />
+            <article>
+              <h2>ex. 03: Duckling, Caktus Group</h2>
+              <br />
+              <img src='../imgs/duckling/duckling_logo.png' alt={`Duckling logo.`} />
+              <br />
+              <p className='technologies'>HTML, CSS, Less, JavaScript, Python, Django, Google Maps API</p>
+              <br />
+              <p>{`Prior to joining Caktus Group as a contractor, I was an intern with them for 3 months. During this time I worked on their social gathering app, Duckling. This app was created to encourage visitors of conferences to set up or join existing outings with other visitors and acted as a showcase of Caktus Group's work at their own conference booth.`}</p>
+              <br />
+              <img src='../imgs/duckling/duckling_pyohio.png' alt={`Duckling widget on 2014 PyOhio website.`} />
+              <br />
+              <p>{`My contributions include: adding Google Maps to the Django admin to allow outing creators to plot venues on a map, building a standalone, embeddable widget for inclusion on conference websites, creating a page for previewing this customizable widget and generating an embed code, and various styling and template modifcations to match design comps. See above for an example of the embedded widget on the PyOhio 2014 site.`}</p>
+              <br />
+              <img src='../imgs/duckling/duckling_widget.png' alt={`Embeddable Duckling widget.`} />
+              <br />
+              <p>{`The embeddable widget would hook-in to the database of currently-active outings and list them. Conference sites could customize the maximum number of outings that would be shown based on the space they had available.`}</p>
+              <br />
+              <p>{`This application has been used at several Python-centric conferences over the years and is my first contribution to a production Django app.`}</p>
+            </article>
+            <hr />
+            <h1>Side Projects:</h1>
             <br />
             <article>
               <h2>ex. 01: huntermacd_com</h2>
@@ -45,13 +115,15 @@ class WorkExamples extends React.Component {
             <article>
               <h2>ex. 02: elm-memory</h2>
               <br />
-              <img src='../imgs/elm-memory.png' alt='Screenshot of Elm memory matching game logo.' />
+              <img src='../imgs/elm-memory/elm-memory_logo.png' alt='Elm memory matching game logo.' />
               <br />
               <a href='https://huntermacd.github.io/elm-memory/'>huntermacd.github.io/elm-memory/</a>
               <br />
               <p className='technologies'>HTML, CSS, Elm</p>
               <br />
               <p>{`This is my first complete Elm project. I appreciate Elm's notion of global app state and reactive UI. Dabbling with Elm has improved my understanding of the React/Redux libraries and has been an enjoyable introduction to functional programming.`}</p>
+              <br />
+              <img src='../imgs/elm-memory/elm-memory_screenshot.png' alt='Screenshot of Elm memory matching game.' />
               <br />
               <p>{`I completed a salary transparency calculator for Caktus Group in December 2016; the first Elm project in Caktus' history.`}</p>
             </article>
@@ -95,13 +167,13 @@ class WorkExamples extends React.Component {
             <article>
               <h2>ex. 06: North Carolina Pipper Peeper</h2>
               <br />
-              <img src='../imgs/ncpipperpeeper.jpg' alt='Picture of a rose-breasted grosbeak.' />
+              <img src='../imgs/ncpp.png' alt='Picture of a rose-breasted grosbeak.' />
               <br />
               <a href='http://ncpipperpeeper.herokuapp.com/'>ncpipperpeeper.herokuapp.com/</a>
               <br />
               <p className='technologies'>HTML, CSS, Python, Django, Heroku</p>
               <br />
-              <p>{`During my internship at Caktus Group and throughout the first two years with Cox Media Group I worked on Python/Django apps. The North Carolina Pipper Peeper is a bird-watching app I built in Django as a showcase of what I learned during my internship. This was my first experience building and deploying a Django app from scratch.`}</p>
+              <p>{`During my internship at Caktus Group and throughout the first two years with Cox Media Group I worked on Python/Django apps. The North Carolina Pipper Peeper is a bird-watching app I built in Django as a showcase of what I learned during my internship. It allows the user to maintain a record of birds they've sighted along with a short description. This was my first experience building and deploying a Django app from scratch.`}</p>
             </article>
             <br/>
             <p>See more examples of my work on <a href="https://github.com/huntermacd/">GitHub</a>.</p>
