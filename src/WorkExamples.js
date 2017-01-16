@@ -18,7 +18,31 @@ class WorkExamples extends React.Component {
         <Cursor section='work-examples.html' />
         { this.props.shouldRender &&
           <section className='work'>
-            <h1>Work Examples</h1>
+            <h1>Client Work:</h1>
+            <br />
+            <article>
+              <h2>ex. 01: huntermacd_com</h2>
+              <br />
+              <img src='../imgs/huntermacd_com.png' alt={`"HM" logo for Hunter MacDermut's blog.`} />
+              <br />
+              <p>(version 1)</p>
+              <a href='https://github.com/huntermacd/huntermacd_com'>github.com/huntermacd/huntermacd_com</a>
+              <br />
+              <p className='technologies'>HTML, CSS, JavaScript, Express, MongoDB</p>
+              <br />
+              <p>(version 2)</p>
+              <a href='https://github.com/huntermacd/huntermacd_com_v2'>github.com/huntermacd/huntermacd_com_v2</a>
+              <br />
+              <p className='technologies'>HTML, CSS, JavaScript, React, Redux, Gulp, Babel</p>
+              <br />
+              <p>{`My personal website and blog was my first experience building a full-stack JavaScript application. I used the (now-defunct) Swig templating engine for the front-end, Node/Express for the server-side code, and MongoDB as a data-store. I never quite developed as a blogger, however, and have since replaced this site with a new version.`}</p>
+              <br />
+              <p>{`Version 2 of my personal website (which you're looking at right now) is a React/Redux-powered application built using ECMAScript 6, Babel, Gulp, and Yarn. The design is meant to replicate working on the command line. Clicking a link at the top will fire-off some JavaScript to simulate typing in a filename and hitting the return key.`}</p>
+              <br />
+              <p>{`This latest version is representative of the work I did on Cox Media Group's Member Center project from April to November of 2016.`}</p>
+            </article>
+            <hr />
+            <h1>Side Projects:</h1>
             <br />
             <article>
               <h2>ex. 01: huntermacd_com</h2>

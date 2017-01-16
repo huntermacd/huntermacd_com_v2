@@ -11,5 +11,3 @@ gulp.task('default', function() {
     .on('error', function(err) { console.log('Error: ' + err.message); })
     .pipe(fs.createWriteStream('dist/Main.js'));
 });
-
-gulp.watch('src/', ['default']);
